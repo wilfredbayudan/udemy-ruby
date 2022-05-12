@@ -33,7 +33,8 @@ loop do
   puts 'Which city would you like the area code for?'
   city = gets.chomp.downcase
   if dial_book.include?(city)
-    puts get_area_code(dial_book, city)
+    area_code = get_area_code(dial_book, city)
+    puts "The area code for #{city} is #{area_code}"
   else
     puts 'You entered an invalid city name'
   end
