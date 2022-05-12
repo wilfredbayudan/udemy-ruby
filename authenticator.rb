@@ -36,7 +36,7 @@ while allowed_attempts >= 1
   if found_user[:password] == entered_password
 
     puts 'AUTHENTICATED!'
-    found_user
+    return found_user
     break
 
   else
